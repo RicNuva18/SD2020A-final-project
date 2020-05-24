@@ -1,11 +1,11 @@
 # SD2020A-final-project
-
+---
 ## Integrantes del proyecto
 
 * Ricardo Núñez - A00030132
 * Felipe Jurado - A00328420
 * Jorge Moreno - A00328088
-
+---
 ## Proceso en general
 
 Para la realización de la aplicación se definieron las siguientes tareas:
