@@ -22,7 +22,7 @@ Para la realización de la aplicación se definieron las siguientes tareas:
 
 Se realiza la codificación de dos microservicios para escritura y lectura de la base de datos, como se muestra en la siguiente imagen.
 
-![imagen 1]("Imagen 1. Microservicios de lectura y escritura") 
+![imagen 1](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ConnectionDB.PNG "Imagen 1. Microservicios de lectura y escritura") 
 
 
 
