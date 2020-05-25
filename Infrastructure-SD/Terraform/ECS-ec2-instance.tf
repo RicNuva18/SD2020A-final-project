@@ -3,9 +3,9 @@
 ###########################################################
 resource "aws_instance" "ec2_instance" {
   ami                    = var.ami
-  subnet_id              =  "subnet-966331ff"
+  subnet_id              =  "subnet-966331ff" #CHANGE THIS
   instance_type          = "t2.small"
-  vpc_security_group_ids =  ["${aws_security_group.ssh-ramp-up.id}"]
+  vpc_security_group_ids =  ["${aws_security_group.ssh-ramp-up.id}"] #CHANGE THIS
   key_name               = "proyectosd" 
   ebs_optimized          = "false"
   source_dest_check      = "false"
