@@ -3,10 +3,10 @@
 ###########################################################
 resource "aws_instance" "ec2_instance" {
   ami                    = var.ami
-  subnet_id              =  "subnet-966331ff" #CHANGE THIS
+  subnet_id              =  "subnet-966331ff"
   instance_type          = "t2.small"
-  vpc_security_group_ids =  ["${aws_security_group.ssh-ramp-up.id}"] #CHANGE THIS
-  key_name               = "CristianMoralesKey2" #CHANGE THIS
+  vpc_security_group_ids =  ["${aws_security_group.ssh-ramp-up.id}"]
+  key_name               = "proyectosd" 
   ebs_optimized          = "false"
   source_dest_check      = "false"
   user_data              = "${data.template_file.user_data.rendered}"
