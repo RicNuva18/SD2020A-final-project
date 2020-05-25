@@ -95,5 +95,13 @@ Una vez que la EC2 se encuentra aprovisionada, se gestiona la configuración nec
 
 ### Desarrollo de archivos de Jenkins para CI en Front-End y Back-End
 
+Para lograr que el pipeline de Integración continua se ejecute en los repositorios de Front-End y Back-End, es necesario definir un archivo Jenkins en cada repositorio. Este archivo va a ser el mismo para cada uno de los repositorios.
 
+![imagen 15](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/JenkinsFileBackFront.PNG "Imagen 15. Archivo Jenkins para proceso de Integración continua en repositorios de Front-End y Back-End")
+
+Dentro de la composición del archivo, se comprenden los siguientes pasos:
+
+1. Chequeo de una de las ramas del repositorio en GitHub que se esté consultando.
+2. Instalación de NodeJs en la EC2.
+3. Ejecución del archivo de pruebas, hecho en NodeJs. 
 
