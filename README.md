@@ -83,7 +83,7 @@ Luego se establece un Security Group, encargado de habilitar el tráfico entrant
 
 ![imagen 12](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ProvisioningSG.PNG "Imagen 12. Reglas de seguridad para servidor CI")
 
-Finalmente se establece que se aprovisione una EC2 en donde se define principalmente su AMI, el tipo, la VPC donde va a estar las llaves para SSH, un script para gestionar su configuración y las reglas del Security Group.
+Finalmente se establece que se aprovisione una EC2 en donde se define principalmente su AMI, el tipo, la VPC donde va a estar, las llaves para establecer conexión via SSH, un script para gestionar su configuración y las reglas del Security Group.
 
 ![imagen 13](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ProvisioningEC2.PNG "Imagen 13. Aprovisionamiento de una EC2")
 
