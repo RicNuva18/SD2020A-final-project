@@ -89,7 +89,7 @@ Finalmente se establece que se aprovisione una EC2 en donde se define principalm
 
 ### Gestión de la configuración del servidor de CI usando Ansible
 
-Una vez que la EC2 se encuentra aprovisionada, se gestiona la configuración necesaria para instalar el servidor Jenkins por medio de Ansible. En el servidor se desarrolla un pipeline para la integración continua de los repositorios de Back-End y Front-End.
+Una vez que la EC2 se encuentra aprovisionada, se gestiona la configuración necesaria para instalar y ejecutar el servidor Jenkins por medio de Ansible. En el servidor se desarrolla un pipeline para la integración continua de los repositorios de Back-End y Front-End.
 
 ![imagen 14](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ConfMagamentAnsibleEC2.PNG "Imagen 13. Gestión de la configuración para el servidor de Jenkins")
 
