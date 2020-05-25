@@ -18,6 +18,7 @@ Para la realización de la aplicación se definieron las siguientes tareas:
 7. Aprovisionamiento de servidor de CI con Jenkins en una EC2 usando Terraform
 8. Gestión de la configuración del servidor de CI usando Ansible
 9. Desarrollo de archivos de Jenkins para CI en Front-End y Back-End
+10. Validación de funcionamiento de Pipeline de CI en Back-End
 ---
 ### Desarrollo de base de datos MySQL en una RDS
 
@@ -64,7 +65,7 @@ Al ya haber desarrollado el código fuente de la aplicación, se procede a reali
 
 ![imagen 9](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/DockerFileBackFront.PNG "Imagen 9. Archivo Docker para Front-End y Back-End")
 
-Este archivo comienza con una imagen base de Node. Luego se define el directorio de trabajo junto con la instalación de npm. finalmente, se ejecuta el artefacto index por medio del módulo de NodeJs en el contenedor.
+Este archivo comienza con una imagen base de Node. Luego se define el directorio de trabajo, el cual va a contener el código fuente correspondiente de Back-End ó Front-End. Finalmente, se instala NPM para el manejo de dependencias del código fuente y se ejecuta el artefacto index por medio del módulo de NodeJs en el contenedor.
 
 ### Despliegue de la aplicación usando Kubernetes
 
@@ -105,3 +106,14 @@ Dentro de la composición del archivo, se comprenden los siguientes pasos:
 2. Instalación de NodeJs en la EC2.
 3. Ejecución del archivo de pruebas, hecho en NodeJs. 
 
+### Validación de funcionamiento de Pipeline de CI en Back-End
+
+Finalmente se comprueba la ejecución exitosa del pipeline de integración continua para el repositorio de Back-End, como se muestra a continuación. En este se ejecutan cada uno de los pasos definidos en el archivo Jenkins.
+
+![imagen 16](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/TestCIBackEnd.PNG "Imagen 16. Prueba de pipeline de CI para Back-End")
+---
+## Errores que ocurrieron en el desarrollo del aplicativo
+
+Entre los errores que ocurrieron al desarrollar esta aplicación, se encuentran:
+
+* Ejecución del archivo de pruebas en el pipeline de integración continua, el cual se debia a una variable de entorno que no estaba definida para conectarse con la base de datos. Para su solución, se establece una conexión via SSH hacia la EC2 y se hace uso del comando export para definir la variable faltante.
