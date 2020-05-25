@@ -69,7 +69,31 @@ Este archivo comienza con una imagen base de Node. Luego se define el directorio
 ### Despliegue de la aplicación usando Kubernetes
 
 
+### Aprovisionamiento de servidor de CI con Jenkins en una EC2 usando Terraform
 
+Al usar Terraform se define el proveedor para el aprovisionamiento de la infraestructura, el cual es AWS para este caso.
+
+![imagen 10](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ProvisioningProvider.PNG "Imagen 10. Proveedor AWS para Terraform")
+
+Una vez definido el proveedor, se establecen variables para que sean reutilizadas en varios recursos de las plantillas de Terraform. Dentro de ellas se encuentra el ID de la AMI y la VPC donde va a ser desplegada la EC2.
+
+![imagen 11](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ProvisioningVariables.PNG "Imagen 11. Variables globales en Terraform")
+
+Luego se establece un Security Group, encargado de habilitar el tráfico entrante SSH hacia la EC2 para gestionar la configuración del servidor. Adicionalmente, se agrega una regla para que el servidor pueda responder a cualquier host que requiera de sus servicios.
+
+![imagen 12](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ProvisioningSG.PNG "Imagen 12. Reglas de seguridad para servidor CI")
+
+Finalmente se establece que se aprovisione una EC2 en donde se define principalmente su AMI, el tipo, la VPC donde va a estar las llaves para SSH, un script para gestionar su configuración y las reglas del Security Group.
+
+![imagen 13](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ProvisioningEC2.PNG "Imagen 13. Aprovisionamiento de una EC2")
+
+### Gestión de la configuración del servidor de CI usando Ansible
+
+Una vez que la EC2 se encuentra aprovisionada, se gestiona la configuración necesaria para instalar el servidor Jenkins por medio de Ansible. En el servidor se desarrolla un pipeline para la integración continua de los repositorios de Back-End y Front-End.
+
+![imagen 14](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ConfMagamentAnsibleEC2.PNG "Imagen 13. Gestión de la configuración para el servidor de Jenkins")
+
+### Desarrollo de archivos de Jenkins para CI en Front-End y Back-End
 
 
 
