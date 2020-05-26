@@ -270,15 +270,15 @@ Entre los errores que ocurrieron al desarrollar esta aplicación, se encuentran:
 
 ## Conclusiones
 
-- El despliegue utilizando kubernetes nos permitio tener una infraestructura de alta disponibilidad y de mejor alcance que incluso con maquinas virtuales las cuales tomarian mucho mas tiempo para ser configuradas,teniendo en cuenta, adicionalmente que los contenedores, a comparación de las maquinas virtuales son mucho mas versatiles,eficientes, entre otras caracteristicas.
+- El despliegue utilizando Kubernetes nos permitió tener una infraestructura de alta disponibilidad y de mejor alcance que incluso con máquinas virtuales, las cuales tomarían mucho más tiempo para ser configuradas. Esto es debido a que los contenedores, en comparación de las maquinas virtuales, son mucho mas versátiles, eficientes, entre otras características.
 
-- La utilización de docker para empaquetar en una imagen la configuración de un contenedor mejora exponecialmente, que configurarla mediante ansible o saltstack, ya que eso involucra un tiempo adicional en la descarga de paquetes e instalación.
+- La utilización de Docker para empaquetar en una imagen la configuración de un contenedor mejora drásticamente, que configurarla mediante Ansible o Saltstack, ya que esto involucra un tiempo adicional en la descarga de paquetes e instalación.
 
-- Kubernetes nos permitió desplegar un dashboard que no necesita software adicional para ser gestionada nuestra infraestructura con balanceadores de carga. Además, el dashboard nos permite poder monitoriar las diferentes caracteristicas de nuestra infraestructura
+- Kubernetes nos permitió desplegar un dashboard que no necesita software adicional para que no se tuvier. Además, el dashboard nos permitió monitoriar las diferentes características de nuestra infraestructura
 
-- El lenguaje utilizado tanto para el front-end como para el back-end, el cual corresponde a Nodejs nos trae beneficios como es lograr expandir nuestro codigo añadiendo diferentes modulos de una manera facil y adicionalmente, el recurrente uso de Nodejs en el campo laboral, nos permite reconocer la importancia de tener conocimiento de dicho lenguaje.
+- El lenguaje NodeJs, utilizado tanto para el front-end como para el back-end, nos trae beneficios como es lograr expandir nuestro codigo añadiendo diferentes modulos de una manera fácil y de reconocer su importancia en el ámbito laboral.
 
-- La integración continua es un claro ejemplo que facilita a los desarrolladores la forma de integrar el codigo con sus repositorio remoto utilizando Jenkins
+- El uso de Jenkins permitió modelar y ejecutar un pipeline de integración continua, con el fin de lograr automatizar las pruebas para el código de los desarrolladores e integrarlo de forma rápida en un repositorio remoto, una vez aprobado su funcionamiento.
 
 
 ## Referencias bibliograficas
@@ -286,5 +286,3 @@ Entre los errores que ocurrieron al desarrollar esta aplicación, se encuentran:
 - https://www.hostinger.co/tutoriales/como-instalar-y-usar-docker-en-ubuntu/
 - https://ricardogeek.com/todo-sobre-los-jenkins-pipelines/
 - https://kubernetes.io/docs/tutorials/
-
-
