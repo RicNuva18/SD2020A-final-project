@@ -251,9 +251,13 @@ Prueba de Pipeline de CI para Back-end
 
 Por último, se muestra a continuación el ingreso de información de un nuevo usuario a la base de datos.
 
+Vista para agregar un nuevo usuario
+
 ![imagen 17](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/AddUserApp.jpg "Imagen 17. Agregar usuario a base de datos")
 
 Adicionalmente, se muestra también que el nuevo usuario se ha ingresado al sistema por medio de su visualización en la página web.
+
+Vista para mostrar los usuarios de la base de datos.
 
 ![imagen 18](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/VisualizationUsersApp.jpg "Imagen 18. Visualización de usuarios")
 
