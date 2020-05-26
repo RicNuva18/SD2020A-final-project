@@ -184,7 +184,11 @@ Y en estos momento ya se encuentra desplegado nuestro cluster. A continuación p
 
 Dashboard 
 
-![imagen 9.3](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/ "Imagen 9.3. Dashboard")
+![imagen 9.3.1](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/Dashboard-kubernetes1.jpeg "Imagen 9.3. Dashboard")
+
+![imagen 9.3.2](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/Dashboard-kubernetes2.jpeg "Imagen 9.3. Dashboard")
+
+![imagen 9.3.3](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/Dashboard-kubernetes3.jpeg "Imagen 9.3. Dashboard")
 
 ### Aprovisionamiento de servidor de CI con Jenkins en una EC2 usando Terraform
 
