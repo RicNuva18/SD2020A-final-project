@@ -28,6 +28,7 @@ A continuación se definieron las siguientes tareas:
 8. Gestión de la configuración del servidor de CI usando Ansible
 9. Desarrollo de archivos de Jenkins para CI en Front-End y Back-End
 10. Validación de funcionamiento de Pipeline de CI en Back-End
+11. Validación de funcionamiento de la aplicación Web desplegada en Kubernetes
 ---
 ## Infraestructura de la solución
 
@@ -245,6 +246,17 @@ Finalmente se comprueba la ejecución exitosa del pipeline de integración conti
 Prueba de Pipeline de CI para Back-end
 
 ![imagen 16](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/TestCIBackEnd.PNG "Imagen 16. Prueba de pipeline de CI para Back-End")
+
+### Validación de funcionamiento de la aplicación Web desplegada en Kubernetes
+
+Por último, se muestra a continuación el ingreso de información de un nuevo usuario a la base de datos.
+
+![imagen 17](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/AddUserApp.jpg "Imagen 17. Agregar usuario a base de datos")
+
+Adicionalmente, se muestra también que el nuevo usuario se ha ingresado al sistema por medio de su visualización en la página web.
+
+![imagen 18](https://github.com/RicNuva18/SD2020A-final-project/blob/master/images/VisualizationUsersApp.jpg "Imagen 18. Visualización de usuarios")
+
 ---
 ## Errores que ocurrieron en el desarrollo del aplicativo
 
@@ -258,7 +270,7 @@ Entre los errores que ocurrieron al desarrollar esta aplicación, se encuentran:
 
 - La utilización de docker para empaquetar en una imagen la configuración de un contenedor mejora exponecialmente, que configurarla mediante ansible o saltstack, ya que eso involucra un tiempo adicional en la descarga de paquetes e instalación.
 
-- Kubernetes nos permitio desplegar un dashboard que no necesita software adicional para ser gestionado nuestra infraestructura con balanceadores de carga. Además, el dashboard nos permite poder monitoriar las diferentes caracteristicas de nuestra infraestructura
+- Kubernetes nos permitió desplegar un dashboard que no necesita software adicional para ser gestionada nuestra infraestructura con balanceadores de carga. Además, el dashboard nos permite poder monitoriar las diferentes caracteristicas de nuestra infraestructura
 
 - El lenguaje utilizado tanto para el front-end como para el back-end, el cual corresponde a Nodejs nos trae beneficios como es lograr expandir nuestro codigo añadiendo diferentes modulos de una manera facil y adicionalmente, el recurrente uso de Nodejs en el campo laboral, nos permite reconocer la importancia de tener conocimiento de dicho lenguaje.
 
